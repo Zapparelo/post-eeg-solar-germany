@@ -1,0 +1,11 @@
+Daten / Data: Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+
+Namensnennung bei Weiterverwendung / Attribution when reusing:
+"Datenquelle: Marktstammdatenregister, Bundesnetzagentur (dl-de/by-2-0, www.marktstammdatenregister.de);
+Aggregation: pegton (https://github.com/Zapparelo/post-eeg-solar-germany)"
+
+Die zugrunde liegenden Rohdaten des Marktstammdatenregisters stehen unter der
+Datenlizenz Deutschland – Namensnennung – Version 2.0 (https://www.govdata.de/dl-de/by-2-0).
+Die Daten wurden von pegton aggregiert (gezählt und summiert je Kreis, Bundesland,
+Jahr und Größenklasse); es sind keine Einzelanlagen enthalten.

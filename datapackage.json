@@ -1,0 +1,221 @@
+{
+  "name": "post-eeg-solar-germany",
+  "title": "Post-EEG / Ü20 Photovoltaik Deutschland nach Kreis (aus dem Marktstammdatenregister)",
+  "description": "Aggregierte Zahlen zu 417.003 PV-Anlagen (Inbetriebnahme 2000–2008), deren 20-jährige EEG-Vergütung 2020–2028 endet, nach Kreis, Bundesland und Größenklasse. Keine Einzelanlagen, keine personenbezogenen Daten.",
+  "version": "2026.11.17",
+  "homepage": "https://github.com/Zapparelo/post-eeg-solar-germany",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "Creative Commons Attribution 4.0"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Marktstammdatenregister (MaStR), Bundesnetzagentur – Datenlizenz Deutschland – Namensnennung – Version 2.0",
+      "path": "https://www.marktstammdatenregister.de"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "pegton",
+      "path": "https://zapparelo.github.io",
+      "role": "author"
+    }
+  ],
+  "keywords": [
+    "photovoltaik",
+    "eeg",
+    "post-eeg",
+    "ü20",
+    "solar",
+    "germany",
+    "marktstammdatenregister",
+    "mastr",
+    "open-data",
+    "energy"
+  ],
+  "resources": [
+    {
+      "name": "kreise_uebersicht",
+      "path": "data/kreise_uebersicht.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Eine Zeile je Kreis/kreisfreie Stadt (400): Anlagen je Jahr des EEG-Förderendes 2020–2028, gesamt, kWp.",
+      "schema": {
+        "fields": [
+          {
+            "name": "kreis_ags",
+            "type": "string"
+          },
+          {
+            "name": "kreis_name",
+            "type": "string"
+          },
+          {
+            "name": "bundesland",
+            "type": "string"
+          },
+          {
+            "name": "anlagen_ende_2020",
+            "type": "number"
+          },
+          {
+            "name": "anlagen_ende_2021",
+            "type": "number"
+          },
+          {
+            "name": "anlagen_ende_2022",
+            "type": "number"
+          },
+          {
+            "name": "anlagen_ende_2023",
+            "type": "number"
+          },
+          {
+            "name": "anlagen_ende_2024",
+            "type": "number"
+          },
+          {
+            "name": "anlagen_ende_2025",
+            "type": "number"
+          },
+          {
+            "name": "anlagen_ende_2026",
+            "type": "number"
+          },
+          {
+            "name": "anlagen_ende_2027",
+            "type": "number"
+          },
+          {
+            "name": "anlagen_ende_2028",
+            "type": "number"
+          },
+          {
+            "name": "ausgefoerdert_bis_2025",
+            "type": "number"
+          },
+          {
+            "name": "anlagen_gesamt",
+            "type": "number"
+          },
+          {
+            "name": "kwp_gesamt",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "kreise_nach_eeg_ende",
+      "path": "data/kreise_nach_eeg_ende.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Langformat: Kreis × Jahr des EEG-Förderendes mit Anlagen, kWp, Anteil privat, Anteil Volleinspeisung.",
+      "schema": {
+        "fields": [
+          {
+            "name": "kreis_ags",
+            "type": "string"
+          },
+          {
+            "name": "kreis_name",
+            "type": "string"
+          },
+          {
+            "name": "bundesland",
+            "type": "string"
+          },
+          {
+            "name": "eeg_ende_jahr",
+            "type": "number"
+          },
+          {
+            "name": "anlagen",
+            "type": "number"
+          },
+          {
+            "name": "kwp",
+            "type": "number"
+          },
+          {
+            "name": "anteil_privat",
+            "type": "number"
+          },
+          {
+            "name": "anteil_volleinspeisung",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "bundeslaender_nach_eeg_ende",
+      "path": "data/bundeslaender_nach_eeg_ende.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Bundesland × Jahr des EEG-Förderendes.",
+      "schema": {
+        "fields": [
+          {
+            "name": "bundesland",
+            "type": "string"
+          },
+          {
+            "name": "eeg_ende_jahr",
+            "type": "number"
+          },
+          {
+            "name": "anlagen",
+            "type": "number"
+          },
+          {
+            "name": "kwp",
+            "type": "number"
+          },
+          {
+            "name": "anteil_privat",
+            "type": "number"
+          },
+          {
+            "name": "anteil_volleinspeisung",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "deutschland_nach_eeg_ende_und_groesse",
+      "path": "data/deutschland_nach_eeg_ende_und_groesse.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Deutschland × Jahr des EEG-Förderendes × Größenklasse (kWp).",
+      "schema": {
+        "fields": [
+          {
+            "name": "eeg_ende_jahr",
+            "type": "number"
+          },
+          {
+            "name": "groessenklasse",
+            "type": "string"
+          },
+          {
+            "name": "anlagen",
+            "type": "number"
+          },
+          {
+            "name": "kwp",
+            "type": "number"
+          }
+        ]
+      }
+    }
+  ]
+}
