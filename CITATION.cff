@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below and credit the source: Marktstammdatenregister, Bundesnetzagentur (dl-de/by-2-0)."
+type: dataset
+title: "Post-EEG / Ü20 Photovoltaik in Deutschland nach Kreis"
+version: "2026.11.17"
+date-released: 2026-11-25
+authors:
+  - name: pegton
+    website: "https://zapparelo.github.io/"
+license: CC-BY-4.0
+repository-code: "https://github.com/Zapparelo/post-eeg-solar-germany"
+url: "https://zapparelo.github.io/daten/"
+keywords: [photovoltaics, EEG, feed-in tariff, Germany, Marktstammdatenregister, open data]
